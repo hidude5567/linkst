@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>linkst</title>
-    <link href="s.css" rel="stylesheet" type="text/css" />
-</head>
-<button onclick="openSite('https://games.construct.net/27703/latest')">calc</button>
-<button onclick="openSite('https://games.construct.net/23234/latest')">gold</button>
-<button><a href=h.html>snow rider</a></button>
-<button onclick="openSite('https://geometrydashunblocked.github.io')">gdash</button>
-<button><a href=t.html>infinite craft</a></button>
-<script>
-    function openSite(url) {
-        var win = window.open('about:blank', '_blank');
-        var iframe = win.document.createElement('iframe');
-
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.border = "none";
-        iframe.src = url;
-
-        win.document.body.appendChild(iframe);
-    } 
-</script>
-</body>
+    <body>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <title>linkst</title>
+            <link href="s.css" rel="stylesheet" type="text/css" />
+        </head>
+            <button onclick="openSite('https://games.construct.net/27703/latest')">calc</button>
+            <button onclick="openSite('https://games.construct.net/23234/latest')">gold</button>
+            <button><a href=h.html>snow rider</a></button>
+            <button onclick="openSite('https://geometrydashunblocked.github.io')">gdash</button>
+            <button><a href=t.html>infinite craft</a></button>
+        <script>
+            function openSite(url) {
+                var win = window.open('about:blank', '_blank');
+                var iframe = win.document.createElement('iframe');
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.border = "none";
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            } 
+        </script>
+    </body>
 
 </html>
