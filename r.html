@@ -15,13 +15,16 @@ r<!DOCTYPE html>
             <button><a href=minecraft.html>minecraft</a></button>
         <script>
             function openSite(url) {
-                var win = window.open('about:blank', '_blank');
-                var iframe = win.document.createElement('iframe');
-                iframe.style.width = "100%";
-                iframe.style.height = "100%";
-                iframe.style.border = "none";
-                iframe.src = url;
-                win.document.body.appendChild(iframe);
+                var pswd = prompt("password")
+                if (pswd === "1234") {
+                    var win = window.open('about:blank', '_blank');
+                    var iframe = win.document.createElement('iframe');
+                    iframe.style.width = "100%";
+                    iframe.style.height = "100%";
+                    iframe.style.border = "none";
+                    iframe.src = url;
+                    win.document.body.appendChild(iframe);
+                }
             } 
         </script>
     </body>
