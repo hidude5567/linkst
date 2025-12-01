@@ -1,0 +1,27 @@
+<script>
+  window.addEventListener("message", (event) => {
+    if (event.data.type === "captcha-completed") {
+      // Find the iframe element
+      const iframeElement = document.querySelector('iframe');
+      if (iframeElement) {
+        // Get the current source URL
+        const currentSrc = iframeElement.src;
+        // Extract the number from the URL using a regular expression
+        const match = currentSrc.match(/\/(\d+)$/);
+
+        if (match) {
+          let currentNumber = parseInt(match[1], 10);
+          // Increment the number if it's less than 44
+          if (currentNumber < 44) {
+            currentNumber++;
+            // Construct the new URL and update the iframe's src
+            const newSrc = currentSrc.replace(/\d+$/, currentNumber);
+            iframeElement.src = newSrc;
+          }
+        }
+      }
+    }
+  });
+</script>
+
+<iframe src="embed.neal.fun" width="400" height="540" frameborder="0" scrolling="no"></iframe>
