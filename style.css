@@ -24,7 +24,7 @@ body {
   text-align: top;
   text-decoration: none
 }
-button {
+button2 {
   background-color: #00ff4c;
   color: #00ff4c;
   font-family: monospace;
@@ -34,7 +34,7 @@ button {
   border: none;
   cursor: pointer;
 }
-button2 {
+button {
   background-color: #000000;
   color: #000000;
   font-family: monospace;
